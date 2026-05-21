@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bara Christian School | Christian Preschool Rooted in Faith, Purpose & Excellence</title>
+  <meta name="description" content="Discover Bara Christian School, a Christ-centered preschool where children grow in faith, character, confidence, and academic readiness in a loving learning environment.">
+  <style>
+
+    :root {
+  --navy: #11274e;
+  --navy-deep: #0a1a36;
+  --gold: #d6a84c;
+  --cream: #fbf7ef;
+  --ink: #1b2430;
+  --muted: #586375;
+  --white: #ffffff;
+  --max: 1180px;
+  --shadow: 0 24px 80px rgba(17, 39, 78, 0.18);
+  --radius: 22px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-shell {
+  overflow-x: clip;
+}
+
+.topbar {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 10;
+  padding: 22px 24px;
+}
+
+.topbar-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--white);
+}
+
+.brand img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.brand-mark {
+  min-width: 0;
+}
+
+.brand-mark strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+.brand-mark span {
+  display: block;
+  font-size: 0.88rem;
+  opacity: 0.9;
+}
+
+.top-cta {
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  color: var(--white);
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  font-size: 0.95rem;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.top-cta:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: end;
+  background:
+    linear-gradient(90deg, rgba(10, 26, 54, 0.84) 0%, rgba(10, 26, 54, 0.56) 42%, rgba(10, 26, 54, 0.22) 68%, rgba(10, 26, 54, 0.12) 100%),
+    linear-gradient(180deg, rgba(8, 16, 34, 0.08) 0%, rgba(8, 16, 34, 0.35) 100%),
+    url("https://res.cloudinary.com/dozcy2jve/image/upload/v1779312195/images/Hero_banner_image_dd30do.png") center/cover no-repeat;
+  color: var(--white);
+  isolation: isolate;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 120px;
+  background: linear-gradient(180deg, rgba(251, 247, 239, 0) 0%, var(--cream) 100%);
+  z-index: -1;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 150px 24px 88px;
+  display: grid;
+  grid-template-columns: minmax(0, 580px);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+  font-size: 0.86rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 18px;
+  font-size: clamp(2.9rem, 8vw, 5.8rem);
+  line-height: 0.95;
+  max-width: 11ch;
+}
+
+.hero-copy {
+  margin-top: 22px;
+  max-width: 35rem;
+  font-size: clamp(1.03rem, 2vw, 1.18rem);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.button.primary {
+  background: var(--gold);
+  color: var(--navy-deep);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+}
+
+.button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.hero-note {
+  margin-top: 22px;
+  font-size: 0.96rem;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+section {
+  padding: 88px 24px;
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.section-kicker {
+  color: var(--navy);
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.intro h2,
+.section-title {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.04;
+  max-width: 12ch;
+}
+
+.lead {
+  margin-top: 20px;
+  font-size: 1.08rem;
+  color: var(--muted);
+  max-width: 58ch;
+}
+
+.image-frame {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 100%;
+  transform: translateY(0);
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.values-band {
+  background: linear-gradient(180deg, #f5eedf 0%, #f8f2e7 100%);
+}
+
+.value-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.value {
+  display: grid;
+  gap: 18px;
+}
+
+.value-visual {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  aspect-ratio: 1.18 / 1;
+}
+
+.value h3 {
+  font-size: 1.55rem;
+  color: var(--navy-deep);
+}
+
+.value p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.split-story {
+  display: grid;
+  grid-template-columns: 0.98fr 1.02fr;
+  gap: 46px;
+  align-items: center;
+}
+
+.quote-line {
+  margin-top: 26px;
+  padding-left: 16px;
+  border-left: 3px solid var(--gold);
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.pillar-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.pillar {
+  padding: 24px 22px;
+  background: rgba(17, 39, 78, 0.04);
+  border: 1px solid rgba(17, 39, 78, 0.08);
+  border-radius: 16px;
+}
+
+.pillar strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.06rem;
+  color: var(--navy-deep);
+}
+
+.pillar p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.belief-band {
+  background:
+    linear-gradient(180deg, rgba(17, 39, 78, 0.94) 0%, rgba(17, 39, 78, 0.98) 100%),
+    url("https://res.cloudinary.com/dozcy2jve/image/upload/v1779312287/images/Contact_section_visual_joz2tc.png") center/cover no-repeat;
+  color: var(--white);
+}
+
+.belief-band .section-kicker,
+.belief-band .section-title,
+.belief-band p,
+.belief-band .scripture {
+  color: var(--white);
+}
+
+.belief-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.belief-item {
+  padding: 24px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.belief-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.belief-item p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.scripture {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.final-cta {
+  padding-top: 92px;
+  padding-bottom: 108px;
+}
+
+.cta-panel {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 34px;
+  align-items: stretch;
+  background: var(--white);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.cta-copy {
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-copy .button.secondary {
+  color: var(--navy-deep);
+  border-color: rgba(17, 39, 78, 0.14);
+  background: rgba(17, 39, 78, 0.04);
+}
+
+.cta-copy .hero-actions {
+  margin-top: 24px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 980px) {
+  .intro,
+  .split-story,
+  .cta-panel,
+  .belief-grid,
+  .value-grid,
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    background-position: 64% center;
+  }
+
+  .hero-inner {
+    padding-top: 132px;
+    padding-bottom: 76px;
+  }
+
+  .cta-copy {
+    padding: 32px 24px 36px;
+  }
+}
+
+@media (max-width: 720px) {
+  .topbar {
+    padding: 18px 16px;
+  }
+
+  .topbar-inner {
+    align-items: flex-start;
+  }
+
+  .top-cta {
+    display: none;
+  }
+
+  .brand img {
+    width: 50px;
+    height: 50px;
+  }
+
+  h1 {
+    max-width: 9ch;
+  }
+
+  section {
+    padding: 74px 18px;
+  }
+
+  .hero-inner {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top">
+          <img src="bara-logo.png" alt="Bara Christian School logo">
+          <div class="brand-mark">
+            <strong>Bara Christian School</strong>
+            <span>Faith • Purpose • Excellence</span>
+          </div>
+        </a>
+        <a class="top-cta" href="#contact">Schedule a Tour</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-inner reveal">
+          <div>
+            <div class="eyebrow">Christ-centered preschool</div>
+            <h1>Brilliance created in His image.</h1>
+            <p class="hero-copy">
+              Bara Christian School gives young children a loving place to grow in faith, confidence,
+              character, and academic readiness through joyful early learning grounded in biblical truth.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">Schedule a Tour</a>
+              <a class="button secondary" href="#mission">Explore Our Mission</a>
+            </div>
+            <p class="hero-note">A warm preschool experience for families looking for faith, care, and a strong start.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container intro">
+          <div class="reveal">
+            <div class="section-kicker">A Loving Beginning</div>
+            <h2>Where little learners are seen, guided, and encouraged.</h2>
+            <p class="lead">
+              We believe every child is intentionally created by God with purpose and potential. At Bara Christian School,
+              children are nurtured spiritually, strengthened socially, and prepared academically in a joyful environment
+              where learning feels safe, personal, and full of wonder.
+            </p>
+            <p class="lead">
+              Our approach blends biblical truth, hands-on discovery, creativity, and loving discipline so children can
+              build strong foundations for school and for life.
+            </p>
+          </div>
+          <div class="image-frame reveal">
+            <img src="https://res.cloudinary.com/dozcy2jve/image/upload/v1779312209/images/Discovery_value_card_visual_myflml.png" alt="Children learning through hands-on play and discovery">
+          </div>
+        </div>
+      </section>
+
+      <section class="values-band">
+        <div class="container">
+          <div class="reveal">
+            <div class="section-kicker">Why Families Choose Bara</div>
+            <h2 class="section-title">A preschool shaped by faith, care, and purposeful growth.</h2>
+          </div>
+          <div class="value-grid">
+            <article class="value reveal">
+              <div class="value-visual">
+                <img src="https://res.cloudinary.com/dozcy2jve/image/upload/v1779312195/images/Hero_banner_image_dd30do.png" alt="Teacher guiding children in a bright preschool classroom">
+              </div>
+              <div>
+                <h3>Faith-Filled Learning</h3>
+                <p>Children learn in a Christ-centered setting where prayer, biblical values, and love are part of everyday life.</p>
+              </div>
+            </article>
+            <article class="value reveal">
+              <div class="value-visual">
+                <img src="https://res.cloudinary.com/dozcy2jve/image/upload/v1779312236/images/Character_value_card_visual_gpmfzw.png" alt="Children practicing kindness and cooperation in the classroom">
+              </div>
+              <div>
+                <h3>Character That Grows Early</h3>
+                <p>We help children practice kindness, responsibility, confidence, and respect through daily routines and relationships.</p>
+              </div>
+            </article>
+            <article class="value reveal">
+              <div class="value-visual">
+                <img src="https://res.cloudinary.com/dozcy2jve/image/upload/v1779312257/images/Parent_reassurance_section_image_wxmkgi.png" alt="Teacher speaking with parents outside the school">
+              </div>
+              <div>
+                <h3>Peace of Mind for Parents</h3>
+                <p>Families are welcomed into a caring school community that values communication, support, and trust.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="mission">
+        <div class="container split-story">
+          <div class="image-frame reveal">
+            <img src="https://res.cloudinary.com/dozcy2jve/image/upload/v1779312257/images/Parent_reassurance_section_image_wxmkgi.png" alt="Parents and teacher smiling during a school conversation">
+          </div>
+          <div class="reveal">
+            <div class="section-kicker">Mission & Vision</div>
+            <h2 class="section-title">Raising children to walk in faith, purpose, and excellence.</h2>
+            <p class="lead">
+              Bara Christian School exists to cultivate children through faith, purpose, and excellence by providing a Christ-centered
+              education that nurtures spiritual growth, academic development, leadership, creativity, and character.
+            </p>
+            <p class="lead">
+              Our vision is to raise a generation of spiritually grounded, purpose-driven leaders who reflect the image of Christ in every area of life.
+            </p>
+            <p class="quote-line">Faith • Purpose • Excellence</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container reveal">
+          <div class="section-kicker">Our Foundation</div>
+          <h2 class="section-title">The values that shape the way children learn and grow here.</h2>
+          <div class="pillar-grid">
+            <div class="pillar">
+              <strong>Faith</strong>
+              <p>We teach children to know God, trust His Word, and build life on a strong spiritual foundation.</p>
+            </div>
+            <div class="pillar">
+              <strong>Purpose</strong>
+              <p>We believe each child is uniquely created by God and full of God-given brilliance and potential.</p>
+            </div>
+            <div class="pillar">
+              <strong>Excellence</strong>
+              <p>We encourage children to do their best, enjoy learning, and grow with joy, discipline, and confidence.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="belief-band">
+        <div class="container">
+          <div class="reveal">
+            <div class="section-kicker">What We Believe</div>
+            <h2 class="section-title">Early education should build strong hearts as well as strong minds.</h2>
+            <p class="lead">
+              We want every family to feel that their child is known, loved, and supported. Our classrooms are designed to help children
+              flourish spiritually, socially, emotionally, and academically in a warm and joyful environment.
+            </p>
+          </div>
+          <div class="belief-grid">
+            <div class="belief-item reveal">
+              <h3>Christ-centered care</h3>
+              <p>Children experience a loving atmosphere where biblical truth, patience, and encouragement are present in daily learning.</p>
+            </div>
+            <div class="belief-item reveal">
+              <h3>Purposeful early learning</h3>
+              <p>Hands-on activities, guided play, and thoughtful routines help children grow in readiness, curiosity, and confidence.</p>
+            </div>
+          </div>
+          <div class="scripture reveal">
+            <div>“I will praise thee; for I am fearfully and wonderfully made.” — Psalm 139:14</div>
+            <div>“Thy word is a lamp unto my feet, and a light unto my path.” — Psalm 119:105</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="contact">
+        <div class="container">
+          <div class="cta-panel reveal">
+            <div class="cta-copy">
+              <div class="section-kicker">Start Here</div>
+              <h2 class="section-title">Give your child a strong, faith-filled start.</h2>
+              <p class="lead">
+                This preview is designed to help parents quickly understand who Bara Christian School is, what it stands for,
+                and why it is a nurturing place for preschool children to grow.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="mailto:hello@barachristianschool.com">Contact the School</a>
+                <a class="button secondary" href="#top">Back to Top</a>
+              </div>
+            </div>
+            <div class="image-frame">
+              <img src="https://res.cloudinary.com/dozcy2jve/image/upload/v1779312287/images/Contact_section_visual_joz2tc.png" alt="Warm and welcoming preschool reception area">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.16 });
+
+document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+
+  </script>
+</body>
+</html>
